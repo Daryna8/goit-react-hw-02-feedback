@@ -1,3 +1,4 @@
+import { StyledOption } from './Feedback.styled';
 export const Statistics = ({
   good,
   neutral,
@@ -7,11 +8,11 @@ export const Statistics = ({
 }) => {
   return (
     <div>
-      <p>Good: {good}</p>
-      <p>Neutral: {neutral}</p>
-      <p>Bad: {bad}</p>
-      <p>Total: {total}</p>
-      <p>Positive feedback: {positivePercentage}%</p>
+      <StyledOption>Good: {good}</StyledOption>
+      <StyledOption>Neutral: {neutral}</StyledOption>
+      <StyledOption>Bad: {bad}</StyledOption>
+      <StyledOption>Total: {total}</StyledOption>
+      <StyledOption>Positive feedback: {positivePercentage}%</StyledOption>
     </div>
   );
 };

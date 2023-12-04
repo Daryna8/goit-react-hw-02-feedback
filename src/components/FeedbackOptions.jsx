@@ -1,14 +1,19 @@
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <div>
+    <Stack spacing={2} direction="row" justifyContent={'center'}>
       {options.map(option => (
-        <button key={option} name={option} onClick={onLeaveFeedback}>
+        <Button
+          variant="contained"
+          key={option}
+          name={option}
+          onClick={onLeaveFeedback}
+        >
           {option}
-        </button>
+        </Button>
       ))}
-    </div>
+    </Stack>
   );
 };
-
-// 2. TODO make <button></button> as styled component
-// with text - transform: capitalize; and margin for space between buttons

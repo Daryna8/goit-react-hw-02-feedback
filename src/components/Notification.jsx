@@ -1,3 +1,5 @@
+import { StyledMessage } from './Feedback.styled';
+
 export const Notification = ({ message }) => {
-  return <p>{message}</p>;
+  return <StyledMessage>{message}</StyledMessage>;
 };

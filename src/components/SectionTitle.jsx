@@ -1,6 +1,8 @@
+import { StyledTitle } from './Feedback.styled';
+
 export const Section = ({ title, children }) => (
   <section>
-    <h2>{title}</h2>
+    <StyledTitle>{title}</StyledTitle>
     {children}
   </section>
 );
